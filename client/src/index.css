@@ -1,13 +1,79 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    max-width: 100vw;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+#root {
+    margin: 0;
+}
+
+.App {
+    font-family: sans-serif;
+    text-align: center;
+    max-width: 100vw;
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(221, 221, 221);
+    height: 70px;
+    justify-content: space-between;
+}
+
+.navbar h1 {
+    margin-left: 20px;
+}
+
+.navbar .dark-mode__toggle {
+    margin-right: 20px;
+}
+
+.dark-mode__toggle {
+    background: #888;
+    border-radius: 50px;
+    border: thin solid #333;
+    height: 20px;
+    position: relative;
+    width: 40px;
+}
+
+.toggle {
+    background: #19b0f6;
+    border-radius: 50px;
+    border: thin solid #0a587c;
+    height: 18px;
+    left: 0;
+    position: absolute;
+    transition: 0.2s;
+    width: 20px;
+}
+
+.toggled {
+    left: 18px;
+}
+
+.dark-mode {
+    color: #fff;
+    background-color: #232529;
+}
+
+.dark-mode .navbar {
+    background-color: #1F2022;
+    border: none;
+}
+
+.dark-mode .table {
+    background-color: #333;
+    color: rgba(255,255,255,.9);
+    border: none;
+}
+
+.dark-mode tbody, 
+.dark-mode tr, 
+.dark-mode td {
+    background-color: #333;
+    color: rgba(255,255,255,.9);
+    border: none;
 }

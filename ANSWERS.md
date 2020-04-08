@@ -1,4 +1,16 @@
 - [ ] Why would you use class component over function components (removing hooks from the question)?
+    - [ ] Using class components gives you more detailed access to the component lifecycle,
 - [ ] Name three lifecycle methods and their purposes.
+    - [ ] componentDidMount - triggered when the component is mounted successfully. Use example would be calling fetch or axios api calls here. 
+    - [ ] componentDidUpdate - triggered when the component is updated. You can use this to watch for prop ot state changes to update the DOM accordingly.
+    - [ ] componentWillUnmount - triggered when the component is unmounted and destroyed. This can be used to clean things up left over from the component such as local storage data, adjusting DOM elements but can not be used to setState()
 - [ ] What is the purpose of a custom hook?
+    - [ ] Creating reusable stateful logic
 - [ ] Why is it important to test our apps?
+    - [ ] Surfaces bugs faster.
+    - [ ] Reduces the risk of regressions.
+    - [ ] Allows us to trust the code.
+    - [ ] Makes us think about the edge cases.
+    - [ ] Acts as a safety net when making changes or refactoring.
+    - [ ] Acts as documentation for the code.
+    - [ ] Encourages us to write more testable (better!) code.
