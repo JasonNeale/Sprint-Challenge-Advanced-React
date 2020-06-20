@@ -1,26 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+// External imports
+import React from 'react'
+import { Container, Header } from "semantic-ui-react";
+
+// Asset imports
+
+// Local imports
+import Players from './components/CompPlayers'
+import PlayerNav from './components/CompNav'
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App page-wrapper">
+            <Container style={{ margin: 20 }} className="text-center">
+                <PlayerNav />
+                <Players />
+            </Container>
+        </div>
+    )
 }
 
-export default App;
+export default App
